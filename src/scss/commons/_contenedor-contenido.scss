@@ -1,0 +1,19 @@
+.contenedor-contenido {
+    margin: 250px 100px 150px 100px ;
+}
+
+.contenido-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 550px) {
+
+    .contenedor-contenido {
+        margin: 200px 20px 150px 20px ;
+    }
+    
+}

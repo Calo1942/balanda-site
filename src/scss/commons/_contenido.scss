@@ -1,0 +1,145 @@
+.bloque-contenido {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/* Descripcion De La Base Aérea */
+
+.imagen-descripcion h5 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#breve-descripcion p {
+    width: 50%;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.separador-secciones {
+    margin: 150px 0;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247,232,170,1) 0%, rgba(192,132,39,1) 25%, rgba(247,232,170,1) 50%, rgba(192,132,39,1) 75%, rgba(247,232,170,1) 100%);
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* Seccion departamentos */
+
+.titulo-seccion {
+    margin-bottom: 100px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.imagen-descripcion img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contenedor-texto h1 {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.contenedor-texto p {
+    width: 90%;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.bloque-contenido .derecha {
+    position: relative;
+    left: 5%;
+}
+
+hr {
+    height: 40vh;
+}
+
+.linea-gradiente-dorado-completa {
+    background: linear-gradient(90deg, rgba(247,232,170,1) 0%, rgba(192,132,39,1) 25%, rgba(247,232,170,1) 50%, rgba(192,132,39,1) 75%, rgba(247,232,170,1) 100%);
+    height: 10px;
+    width: 100%;
+    box-shadow: 0px 5px 15px #121212aa;
+    border: none;
+}
+
+@media (max-width: 960px) {
+
+    .bloque-contenido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .separador-mini {
+        width: 90%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    #breve-descripcion p {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 550px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .bloque-contenido .derecha {
+        position: relative;
+        left: 0;
+    }
+
+    .imagen-descripcion img {
+        width: 550px;
+        max-width: none;
+    }
+
+    .imagen-descripcion {
+        margin-top: 25px;
+    }
+
+    .contenedor-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor-texto h1 {
+        width: 80%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contenedor-texto p {
+        width: 100%;
+        max-width: 550px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    #bomberos-aeronauticos {
+        flex-direction: column-reverse;
+    }
+
+    #escudo-img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 707px) {
+    
+    .imagen-descripcion img {
+        width: 100%;
+        max-width: none;
+    }
+}

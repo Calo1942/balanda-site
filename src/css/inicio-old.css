@@ -1,0 +1,572 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    color: #FFF;
+}
+
+body {
+    background-color: #121212;
+}
+
+/* Header */
+
+header {
+    height: 66px;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header * {
+    text-decoration: none;
+    color: white;
+    font-size: 1.015em;
+}
+
+#lista-links-navegación {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lista-links-navegación > ul {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#texto-balanda-header {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#linea-gradiente-dorado-header {
+    background: linear-gradient(90deg, rgba(247,232,170,1) 0%, rgba(192,132,39,1) 25%, rgba(247,232,170,1) 50%, rgba(192,132,39,1) 75%, rgba(247,232,170,1) 100%);
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    box-shadow: 0px 5px 15px #121212aa;
+}
+
+header #contenedor-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    background-color: aqua;
+    height: 0px;
+}
+
+header #contenedor-img #insignia-header {
+    width: 110px;
+    height: 110px;
+    filter: drop-shadow(0px 2.5px 10px #121212aa);
+}
+
+/* Banner */
+
+#contenedor-banner {
+    height: calc(100vh - 66px);
+}
+
+#fondo-cielo {
+    background: url("../img/inicio/cielo-azul-fondo.png") center center/cover no-repeat;
+    height: 100%;
+}
+
+#nubes {
+    background: url("../img/inicio/Nubes.png") center center/cover no-repeat;
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    bottom: 000px;
+}
+
+.avion-banner {
+    background: url("../img/inicio/k-8-sin-fondo.png") center center/cover no-repeat;
+    aspect-ratio: 5/2;
+    position: absolute;
+    min-width: 600px;
+}
+
+#avion-banner-1 {
+    width: 42%;
+    top: 18vh;
+    right: 20%;
+
+    animation: 3250ms infinite alternate movimieto-avion1;
+}
+
+/* Animacion Avion 1 */
+
+@keyframes movimieto-avion1 {
+    0% {
+        top: 16vh;
+    } 100% {
+        top: 20vh;
+    }
+}
+
+#avion-banner-2 {
+    width: 50%;
+    top: 45vh;
+    right: 5%;
+    
+    animation: 3750ms infinite alternate movimieto-avion2;
+}
+
+/* Animacion Avion 2 */
+
+@keyframes movimieto-avion2 {
+    0% {
+        top: 43vh;
+    } 100% {
+        top: 47vh;
+    }
+}
+
+#filtro-oscuro {
+    background: linear-gradient(0deg, #121212ff 0%, #12121200 40%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#bienvenida {
+    position: absolute;
+    background-color: #121212;
+    bottom: 40px;
+    left: 35px;
+    padding: 25px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+#bienvenida > * {
+    background: linear-gradient(90deg, rgba(192,132,39,1) 0%, rgba(247,232,170,1) 25%, rgba(192,132,39,1) 50%, rgba(247,232,170,1) 75%, rgba(192,132,39,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#texto-balanda {
+    font-size: 4.8em;
+    font-weight: bold;
+}
+
+#bienvenida hr {
+    height: 6px;
+    background: #fff;
+    margin: 13px 0;
+}
+
+#texto-base-aerea, #texto-nombre {
+    font-size: 2em;
+}
+
+/* Contenido */
+
+#contenedor-contenido {
+    margin: 250px 100px 150px 100px ;
+}
+
+#contenido-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloque-contenido {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/* Descripcion De La Base Aérea */
+
+.imagen-descripcion h5 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#breve-descripcion p {
+    width: 50%;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.separador-secciones {
+    margin: 150px 0;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247,232,170,1) 0%, rgba(192,132,39,1) 25%, rgba(247,232,170,1) 50%, rgba(192,132,39,1) 75%, rgba(247,232,170,1) 100%);
+    border-radius: 10px;
+    border: none;
+}
+
+/* Seccion departamentos */
+
+.titulo-seccion {
+    margin-bottom: 100px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.imagen-descripcion img {
+    width: 100%;
+    max-width: 480px;
+}
+
+.contenedor-texto h1 {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.contenedor-texto p {
+    width: 90%;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.bloque-contenido .derecha {
+    position: relative;
+    left: 5%;
+}
+
+hr {
+    height: 40vh;
+}
+
+/* Preguntas Frecuentes */
+
+#contenedor-preguntas-frecuentes * {
+    color: #121212;
+}
+
+#contenedor-preguntas-frecuentes {
+    background-color: #FFF;
+    width: 60%;
+    max-width: 700px;
+    text-align: center;
+    padding: 25px;
+}
+
+.pregunta-contenedor {
+    border-radius: 10px;
+    background-color: #ababab;
+    padding: 3px;
+    margin: 20px;
+}
+
+.pregunta-contenedor:hover {
+    background-color: #39A7F7aa;
+}
+
+.pregunta-contenedor h3 {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 0 10px;
+    min-height: 40px;
+}
+
+.pregunta-contenedor p {
+    text-align: justify;
+    padding: 15px;
+}
+
+#contenedor-preguntas-frecuentes h1 {
+    padding: 20px 0;
+}
+
+#link-contactanos {
+    margin-top: 55px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h5 {
+    font-weight: 100;
+    text-align: center;
+}
+
+#linea-gradiente-dorado-footer {
+    background: linear-gradient(90deg, rgba(247,232,170,1) 0%, rgba(192,132,39,1) 25%, rgba(247,232,170,1) 50%, rgba(192,132,39,1) 75%, rgba(247,232,170,1) 100%);
+    height: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 0px 5px 15px #121212aa;
+}
+
+@media (max-width: 1111px) {
+    
+    /* Links Header */
+    .links-ocultar {
+        visibility: hidden;
+    }
+    
+    /* Posicion Aviones */
+    #avion-banner-1 {
+        right: 34%;
+    }
+    
+    #avion-banner-2 {
+        right: 15%;
+    }
+
+    @keyframes movimieto-avion1 {
+        0% {
+            top: 15vh;
+        } 100% {
+            top: 19vh;
+        }
+    }
+
+    @keyframes movimieto-avion2 {
+        0% {
+            top: 36vh;
+        } 100% {
+            top: 40vh;
+        }
+    }
+
+    #bienvenida {
+        position: relative;
+        bottom: 200px;
+        left: 0;
+        padding: 25px;
+        border-radius: 0;
+    }
+
+    #contenedor-preguntas-frecuentes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    
+    #avion-banner-1 {
+        width: 42%;
+        top: 13vh;
+        right: 20%;
+    }
+    
+    #avion-banner-2 {
+        width: 50%;
+        top: 32vh;
+        right: 5%;
+    }
+    
+    @media (max-height: 800px) {
+        
+        #avion-banner-1 {
+            width: 42%;
+            top: 13vh;
+            right: 20%;
+        }
+        
+        #avion-banner-2 {
+            display: none;
+        }
+        
+    }
+
+    .bloque-contenido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .separador-mini {
+        width: 90%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    #breve-descripcion p {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 550px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .bloque-contenido .derecha {
+        position: relative;
+        left: 0;
+    }
+
+    .imagen-descripcion img {
+        width: 550px;
+        max-width: none;
+    }
+
+    .imagen-descripcion {
+        margin-top: 25px;
+    }
+
+    .contenedor-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor-texto h1 {
+        width: 80%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contenedor-texto p {
+        width: 100%;
+        max-width: 550px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    #bomberos-aeronauticos {
+        flex-direction: column-reverse;
+    }
+
+    #escudo-img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 707px) {
+
+    .avion-banner {
+        min-width: 100px;
+    }
+
+    #avion-banner-1 {
+        width: 70%;
+        top: 15vh;
+        right: 28%;
+    }
+    
+    #avion-banner-2 {
+        width: 75%;
+        top: 33vh;
+        right: 4%;
+    }
+
+    #bienvenida {
+        bottom: 300px;
+        left: 0;
+        padding: 25px;
+        width: calc(100% - 50px);
+    }
+
+    #bienvenida hr {
+        height: 6px;
+        background: #fff;
+        margin: 13px 0;
+    }
+
+    .imagen-descripcion img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    #texto-balanda {
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    #contenedor-contenido {
+        margin: 200px 20px 150px 20px ;
+    }
+
+    #contenedor-preguntas-frecuentes {
+        background-color: #FFF;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    
+    #avion-banner-1 {
+        width: 70%;
+        top: 21vh;
+        right: 25%;
+    }
+    
+    #avion-banner-2 {
+        width: 75%;
+        top: 33vh;
+        right: 8%;
+    }
+}
+
+@media (max-width: 380px) {
+    
+    header #contenedor-img #insignia-header {
+        width: 80px;
+        height: 80px;
+        filter: drop-shadow(0px 2.5px 10px #121212aa);
+    }
+
+    #avion-banner-1 {
+        width: 85%;
+        top: 25vh;
+        right: 12%;
+    }
+    
+    #avion-banner-2 {
+        display: none;
+    }
+
+    #bienvenida {
+        position: relative;
+        background-color: #121212;
+        bottom: 250px;
+        left: 0;
+        padding: 25px;
+        width: calc(100% - 50px);
+        border-radius: 0;
+    }
+
+    @keyframes movimieto-avion1 {
+        0% {
+            top: 30vh;
+        } 100% {
+            top: 34vh;
+        }
+    }
+}

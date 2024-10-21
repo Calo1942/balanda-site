@@ -1,0 +1,65 @@
+/* Preguntas Frecuentes */
+
+#contenedor-preguntas-frecuentes * {
+    color: #121212;
+}
+
+#contenedor-preguntas-frecuentes {
+    background-color: #FFF;
+    width: 60%;
+    max-width: 700px;
+    text-align: center;
+    padding: 25px;
+}
+
+.pregunta-contenedor {
+    border-radius: 10px;
+    background-color: #ababab;
+    padding: 3px;
+    margin: 20px;
+}
+
+.pregunta-contenedor:hover {
+    background-color: #39A7F7aa;
+}
+
+.pregunta-contenedor h3 {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 0 10px;
+    min-height: 40px;
+}
+
+.pregunta-contenedor p {
+    text-align: justify;
+    padding: 15px;
+}
+
+#contenedor-preguntas-frecuentes h1 {
+    padding: 20px 0;
+}
+
+#link-contactanos {
+    margin-top: 55px;
+    text-align: center;
+}
+
+@media (max-width: 1111px) {
+    #contenedor-preguntas-frecuentes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    #contenedor-preguntas-frecuentes {
+        background-color: #FFF;
+        border-radius: 0px;
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+        padding: 15px;
+    }
+}
