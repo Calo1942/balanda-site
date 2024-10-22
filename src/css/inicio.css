@@ -28,13 +28,13 @@ header * {
   font-size: 1.015em;
 }
 
-#lista-links-navegación {
+#lista-links-navegacion {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#lista-links-navegación > ul {
+#lista-links-navegacion > ul {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +71,11 @@ header #contenedor-img #insignia-header {
   width: 110px;
   height: 110px;
   filter: drop-shadow(0px 2.5px 10px rgba(18, 18, 18, 0.6666666667));
+}
+
+#texto-balanda-header {
+  font-family: "Arvo", serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1111px) {
@@ -136,10 +141,10 @@ header #contenedor-img #insignia-header {
 /* Animacion Avion 2 */
 @keyframes movimieto-avion2 {
   0% {
-    top: 43vh;
+    top: 47vh;
   }
   100% {
-    top: 47vh;
+    top: 43vh;
   }
 }
 #filtro-oscuro {
@@ -165,15 +170,18 @@ header #contenedor-img #insignia-header {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Arvo", serif;
+  font-weight: 700;
 }
 
 #texto-balanda {
   font-size: 4.8em;
   font-weight: bold;
+  letter-spacing: 5px;
 }
 
 #bienvenida hr {
-  height: 6px;
+  height: 4px;
   background: #fff;
   margin: 13px 0;
 }
@@ -200,10 +208,10 @@ header #contenedor-img #insignia-header {
   }
   @keyframes movimieto-avion2 {
     0% {
-      top: 36vh;
+      top: 40vh;
     }
     100% {
-      top: 40vh;
+      top: 36vh;
     }
   }
   #bienvenida {
@@ -279,6 +287,9 @@ header #contenedor-img #insignia-header {
     top: 33vh;
     right: 8%;
   }
+  #texto-balanda {
+    font-size: 2.5em;
+  }
 }
 @media (max-width: 380px) {
   #avion-banner-1 {
@@ -292,7 +303,7 @@ header #contenedor-img #insignia-header {
   #bienvenida {
     position: relative;
     background-color: #121212;
-    bottom: 250px;
+    bottom: 200px;
     left: 0;
     padding: 25px;
     width: calc(100% - 50px);

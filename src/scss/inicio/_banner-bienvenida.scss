@@ -54,9 +54,9 @@
 
 @keyframes movimieto-avion2 {
     0% {
-        top: 43vh;
-    } 100% {
         top: 47vh;
+    } 100% {
+        top: 43vh;
     }
 }
 
@@ -83,15 +83,18 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Arvo", serif;
+    font-weight: 700;
 }
 
 #texto-balanda {
     font-size: 4.8em;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 
 #bienvenida hr {
-    height: 6px;
+    height: 4px;
     background: #fff;
     margin: 13px 0;
 }
@@ -121,9 +124,9 @@
 
     @keyframes movimieto-avion2 {
         0% {
-            top: 36vh;
-        } 100% {
             top: 40vh;
+        } 100% {
+            top: 36vh;
         }
     }
 
@@ -218,6 +221,10 @@
         top: 33vh;
         right: 8%;
     }
+
+    #texto-balanda {
+        font-size: 2.5em;
+    }
 }
 
 @media (max-width: 380px) {
@@ -235,7 +242,7 @@
     #bienvenida {
         position: relative;
         background-color: #121212;
-        bottom: 250px;
+        bottom: 200px;
         left: 0;
         padding: 25px;
         width: calc(100% - 50px);
