@@ -119,7 +119,7 @@ header #contenedor-img #insignia-header {
   width: 42%;
   top: 18vh;
   right: 20%;
-  animation: 3250ms infinite alternate movimieto-avion1;
+  animation: 3250ms ease-in-out infinite alternate movimieto-avion1;
 }
 
 /* Animacion Avion 1 */
@@ -135,7 +135,7 @@ header #contenedor-img #insignia-header {
   width: 50%;
   top: 45vh;
   right: 5%;
-  animation: 3750ms infinite alternate movimieto-avion2;
+  animation: 3750ms ease-in-out infinite alternate movimieto-avion2;
 }
 
 /* Animacion Avion 2 */
