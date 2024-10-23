@@ -1,0 +1,25 @@
+/* Contenido Redes Sociales */
+
+#redes-sociales {
+    list-style: none;
+}
+
+#redes-sociales li,
+#redes-sociales li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#redes-sociales li a {
+    margin: 25px 0;
+}
+
+#redes-sociales li img {
+    width: 77px;
+    padding: 0 25px ;
+}
+
+#redes-sociales li:hover {
+    color: #388CCA;
+}
