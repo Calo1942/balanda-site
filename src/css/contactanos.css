@@ -23,18 +23,23 @@ header {
   z-index: 1000;
 }
 
+#contenedor-titulo-balanda {
+  display: none;
+  position: absolute;
+  left: 25px;
+}
+
 #menu {
   display: none;
   position: absolute;
   right: 25px;
-  font-size: 1.8em;
   cursor: pointer;
 }
 
 #menu-icono {
-  width: 30px;
+  width: 25px;
   aspect-ratio: 1;
-  margin: 10px 15px;
+  margin: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -42,7 +47,7 @@ header {
 
 #menu-icono .hamburguesa {
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: #FFF;
   border-radius: 2px;
 }
@@ -50,7 +55,7 @@ header {
 #contenedor-menu-desplegable {
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 47px;
   background-color: #121212;
   padding: 10px 20px;
   width: 180px;
@@ -67,11 +72,17 @@ header {
   margin: 5px 0;
 }
 
-#contenedor-menu-desplegable a h3:hover {
+.hover-dorado a:hover,
+#contenedor-menu-desplegable a h3:hover,
+#contenedor-titulo-balanda a:hover {
   background: linear-gradient(90deg, rgb(192, 132, 39) 0%, rgb(247, 232, 170) 25%, rgb(192, 132, 39) 50%, rgb(247, 232, 170) 75%, rgb(192, 132, 39) 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hover-dorado a:hover,
+#contenedor-menu-desplegable a h3:hover {
   border-bottom: 2px solid #FFF;
 }
 
@@ -127,9 +138,11 @@ header #contenedor-img #insignia-header {
 }
 
 #texto-balanda-header,
-#texto-menu {
+#texto-menu,
+#contenedor-titulo-balanda a {
   font-family: "Arvo", serif;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 @media (max-width: 1111px) {
@@ -138,6 +151,21 @@ header #contenedor-img #insignia-header {
   }
   #menu {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    right: 15px;
+  }
+  #contenedor-titulo-balanda {
+    display: block;
+  }
+}
+@media (max-width: 580px) {
+  header #contenedor-img #insignia-header {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 2.5px 10px rgba(18, 18, 18, 0.6666666667));
+  }
+  #menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -148,6 +176,16 @@ header #contenedor-img #insignia-header {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0px 2.5px 10px rgba(18, 18, 18, 0.6666666667));
+  }
+  #menu {
+    right: 4px;
+  }
+  #contenedor-titulo-balanda {
+    left: 13px;
+  }
+  #texto-menu,
+  #contenedor-titulo-balanda a {
+    font-size: 1.6rem;
   }
 }
 /* BANNERS */
@@ -315,7 +353,7 @@ header #contenedor-img #insignia-header {
     max-width: none;
   }
   .imagen-descripcion {
-    margin-top: 25px;
+    margin: 30px 0;
   }
   .contenedor-texto {
     display: flex;
@@ -357,15 +395,30 @@ header #contenedor-img #insignia-header {
   }
 }
 /* Contenido Redes Sociales */
-#redes-sociales {
-  list-style: none;
+.contenedor-contenido {
+  margin: 50px 0;
 }
 
-#redes-sociales li,
+#titulo-siguenos {
+  margin: 20px 0 20px 0;
+  width: 80%;
+}
+
+#redes-sociales {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
 #redes-sociales li a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  text-decoration: none;
 }
 
 #redes-sociales li a {
@@ -377,10 +430,54 @@ header #contenedor-img #insignia-header {
   padding: 0 25px;
 }
 
-#redes-sociales li:hover {
-  color: #388CCA;
+#redes-sociales li:hover a {
+  background: linear-gradient(90deg, rgb(192, 132, 39) 0%, rgb(247, 232, 170) 25%, rgb(192, 132, 39) 50%, rgb(247, 232, 170) 75%, rgb(192, 132, 39) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
 }
 
+@media (max-width: 930px) {
+  #redes-sociales li img {
+    width: 50px;
+  }
+}
+@media (max-width: 770px) {
+  #redes-sociales li a {
+    font-size: 0.9rem;
+  }
+  .contenedor-contenido {
+    margin: 0;
+  }
+}
+@media (max-width: 540px) {
+  #titulo-siguenos {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+  #redes-sociales li img {
+    padding: 0 10px;
+  }
+  #redes-sociales li a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 540px) {
+  #titulo-siguenos {
+    font-size: 1.5rem;
+  }
+  #redes-sociales li img {
+    padding: 10px;
+  }
+  #redes-sociales li img {
+    width: 60px;
+  }
+  #redes-sociales li a {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #banner-teniente-premilitar {
   background: url("../img/contactanos/niños-teniente-premilitar.png") center center/cover no-repeat;
 }
