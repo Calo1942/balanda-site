@@ -5,12 +5,12 @@
 }
 
 #fondo-cielo {
-    background: url("../img/inicio/cielo-azul-fondo.png") center center/cover no-repeat;
+    background: url("../img/inicio/cielo-azul-fondo.webp") center center/cover no-repeat;
     height: 100%;
 }
 
 #nubes {
-    background: url("../img/inicio/Nubes.png") center center/cover no-repeat;
+    background: url("../img/inicio/Nubes.webp") center center/cover no-repeat;
     width: 100%;
     height: 1100px;
     position: absolute;
@@ -18,7 +18,7 @@
 }
 
 .avion-banner {
-    background: url("../img/inicio/k-8-sin-fondo.png") center center/cover no-repeat;
+    background: url("../img/inicio/k-8-sin-fondo.webp") center center/cover no-repeat;
     aspect-ratio: 5/2;
     position: absolute;
     min-width: 600px;

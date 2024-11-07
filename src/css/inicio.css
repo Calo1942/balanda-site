@@ -194,12 +194,12 @@ header #contenedor-img #insignia-header {
 }
 
 #fondo-cielo {
-  background: url("../img/inicio/cielo-azul-fondo.png") center center/cover no-repeat;
+  background: url("../img/inicio/cielo-azul-fondo.webp") center center/cover no-repeat;
   height: 100%;
 }
 
 #nubes {
-  background: url("../img/inicio/Nubes.png") center center/cover no-repeat;
+  background: url("../img/inicio/Nubes.webp") center center/cover no-repeat;
   width: 100%;
   height: 1100px;
   position: absolute;
@@ -207,7 +207,7 @@ header #contenedor-img #insignia-header {
 }
 
 .avion-banner {
-  background: url("../img/inicio/k-8-sin-fondo.png") center center/cover no-repeat;
+  background: url("../img/inicio/k-8-sin-fondo.webp") center center/cover no-repeat;
   aspect-ratio: 5/2;
   position: absolute;
   min-width: 600px;
@@ -503,6 +503,10 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
+.separador-mini {
+  height: 275px;
+}
+
 @media (max-width: 960px) {
   .titulo-seccion {
     font-size: 2.3em;
@@ -512,8 +516,8 @@ header #contenedor-img #insignia-header {
     width: 100%;
   }
   .separador-mini {
-    width: 90%;
-    height: 1px;
+    width: 80%;
+    height: 0;
     margin: 20px 0;
   }
   #breve-descripcion p {

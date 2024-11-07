@@ -67,6 +67,10 @@
     border: none;
 }
 
+.separador-mini {
+    height: 275px;
+}
+
 @media (max-width: 960px) {
 
     .titulo-seccion {
@@ -79,8 +83,8 @@
     }
     
     .separador-mini {
-        width: 90%;
-        height: 1px;
+        width: 80%;
+        height: 0;
         margin: 20px 0;
     }
 

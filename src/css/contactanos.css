@@ -324,6 +324,10 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
+.separador-mini {
+  height: 275px;
+}
+
 @media (max-width: 960px) {
   .titulo-seccion {
     font-size: 2.3em;
@@ -333,8 +337,8 @@ header #contenedor-img #insignia-header {
     width: 100%;
   }
   .separador-mini {
-    width: 90%;
-    height: 1px;
+    width: 80%;
+    height: 0;
     margin: 20px 0;
   }
   #breve-descripcion p {
@@ -479,7 +483,7 @@ header #contenedor-img #insignia-header {
   }
 }
 #banner-teniente-premilitar {
-  background: url("../img/contactanos/niños-teniente-premilitar.png") center center/cover no-repeat;
+  background: url("../img/contactanos/niños-teniente-premilitar.webp") center center/cover no-repeat;
 }
 
 /* Footer */
