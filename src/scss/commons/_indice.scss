@@ -1,0 +1,30 @@
+/* Indice de Contenido */
+#indice {
+    padding: 25px;
+    margin: 50px 0;
+}
+
+#indice h1 {
+    padding: 0 0 10px 0;
+}
+
+#indice ul {
+    list-style: none;
+}
+
+#indice ul li {
+    padding: 2px;
+}
+
+#indice ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+#indice ul li a:hover {
+    text-decoration: underline;
+    color: #121212;
+    background-color: #fff;
+    border-radius: 3px;
+}

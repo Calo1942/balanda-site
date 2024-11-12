@@ -244,7 +244,7 @@ header #contenedor-img #insignia-header {
 }
 /* Contenedor Contenido*/
 .contenedor-contenido {
-  margin: 50px 100px 200px 100px;
+  margin: 50px 100px 130px 100px;
 }
 
 .contenido-body {
@@ -257,7 +257,7 @@ header #contenedor-img #insignia-header {
 
 @media (max-width: 550px) {
   .contenedor-contenido {
-    margin: 50px 20px 150px 20px;
+    margin: 50px 20px 100px 20px;
   }
 }
 .bloque-contenido {
@@ -408,7 +408,7 @@ header #contenedor-img #insignia-header {
 }
 
 .parrafo-solo p {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
 }
 

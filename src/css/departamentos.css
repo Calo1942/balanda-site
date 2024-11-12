@@ -284,7 +284,7 @@ header #contenedor-img #insignia-header {
 
 /* Contenedor Contenido*/
 .contenedor-contenido {
-  margin: 50px 100px 200px 100px;
+  margin: 50px 100px 130px 100px;
 }
 
 .contenido-body {
@@ -297,7 +297,7 @@ header #contenedor-img #insignia-header {
 
 @media (max-width: 550px) {
   .contenedor-contenido {
-    margin: 50px 20px 150px 20px;
+    margin: 50px 20px 100px 20px;
   }
 }
 .bloque-contenido {
@@ -438,6 +438,37 @@ header #contenedor-img #insignia-header {
     font-size: 1.75em;
   }
 }
+/* Indice de Contenido */
+#indice {
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#indice h1 {
+  padding: 0 0 10px 0;
+}
+
+#indice ul {
+  list-style: none;
+}
+
+#indice ul li {
+  padding: 2px;
+}
+
+#indice ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+
+#indice ul li a:hover {
+  text-decoration: underline;
+  color: #121212;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
 /* Estilos adicionales "Departamentos" */
 .contenedor-contenido {
   margin: 50px 100px 200px 100px;
