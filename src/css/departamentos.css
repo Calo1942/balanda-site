@@ -444,7 +444,7 @@ header #contenedor-img #insignia-header {
 }
 
 .imagen-descripcion img {
-  max-height: 400px;
+  max-width: 400px;
 }
 
 a h1 {
@@ -454,6 +454,9 @@ a h1 {
 @media (max-width: 520px) {
   .contenedor-contenido {
     margin: 50px 20px 200px 20px;
+  }
+  .imagen-descripcion img {
+    max-width: 350px;
   }
 }
 /* Footer */

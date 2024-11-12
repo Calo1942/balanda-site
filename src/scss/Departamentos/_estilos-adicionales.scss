@@ -5,7 +5,7 @@
 }
 
 .imagen-descripcion img {
-    max-height: 400px;
+    max-width: 400px;
 }
 
 a h1 {
@@ -16,5 +16,9 @@ a h1 {
     
     .contenedor-contenido {
         margin: 50px 20px 200px 20px ;
+    }
+
+    .imagen-descripcion img {
+        max-width: 350px;
     }
 }
