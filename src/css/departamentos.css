@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* Estilos de Inicio */
 * {
   padding: 0;
   margin: 0;
@@ -282,6 +282,7 @@ header #contenedor-img #insignia-header {
   background: url("../img/departamentos/Banner-epa.webp") center center/cover no-repeat;
 }
 
+/* Contenedor Contenido*/
 .contenedor-contenido {
   margin: 50px 100px 200px 100px;
 }
@@ -307,7 +308,6 @@ header #contenedor-img #insignia-header {
   margin-bottom: 70px;
 }
 
-/* Descripcion De La Base Aérea */
 .imagen-descripcion h5 {
   margin-top: 10px;
   text-align: center;
@@ -329,7 +329,6 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
-/* Seccion departamentos */
 .titulo-seccion {
   margin-bottom: 100px;
   font-size: 3em;
@@ -439,8 +438,13 @@ header #contenedor-img #insignia-header {
     font-size: 1.75em;
   }
 }
+/* Estilos adicionales "Departamentos" */
 .contenedor-contenido {
   margin: 50px 100px 200px 100px;
+}
+
+.imagen-descripcion img {
+  max-height: 400px;
 }
 
 a h1 {

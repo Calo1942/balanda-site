@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* Estilos de Inicio */
 * {
   padding: 0;
   margin: 0;
@@ -241,6 +241,7 @@ header #contenedor-img #insignia-header {
     font-size: 2.5em;
   }
 }
+/* Contenedor Contenido*/
 .contenedor-contenido {
   margin: 50px 100px 200px 100px;
 }
@@ -266,7 +267,6 @@ header #contenedor-img #insignia-header {
   margin-bottom: 70px;
 }
 
-/* Descripcion De La Base Aérea */
 .imagen-descripcion h5 {
   margin-top: 10px;
   text-align: center;
@@ -288,7 +288,6 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
-/* Seccion departamentos */
 .titulo-seccion {
   margin-bottom: 100px;
   font-size: 3em;
@@ -398,6 +397,15 @@ header #contenedor-img #insignia-header {
     font-size: 1.75em;
   }
 }
+/* Estilos adicionales "Ayuda" */
+#banner-balanda-entrada {
+  background: url("../img/ayuda/k8-1.webp") center center/cover no-repeat;
+}
+
+.contenedor-texto ul {
+  padding: 20px 50px;
+}
+
 /* Footer */
 footer {
   height: 80px;

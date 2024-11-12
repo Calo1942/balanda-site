@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Estilos de Inicio */
 * {
   padding: 0;
   margin: 0;
@@ -241,6 +242,7 @@ header #contenedor-img #insignia-header {
     font-size: 2.5em;
   }
 }
+/* Contenedor Contenido*/
 .contenedor-contenido {
   margin: 50px 100px 200px 100px;
 }
@@ -266,7 +268,6 @@ header #contenedor-img #insignia-header {
   margin-bottom: 70px;
 }
 
-/* Descripcion De La Base Aérea */
 .imagen-descripcion h5 {
   margin-top: 10px;
   text-align: center;
@@ -288,7 +289,6 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
-/* Seccion departamentos */
 .titulo-seccion {
   margin-bottom: 100px;
   font-size: 3em;
@@ -398,6 +398,7 @@ header #contenedor-img #insignia-header {
     font-size: 1.75em;
   }
 }
+/* Estilos Párrafos */
 .parrafo-solo {
   width: 100%;
   display: flex;
@@ -411,6 +412,7 @@ header #contenedor-img #insignia-header {
   width: 100%;
 }
 
+/* Botón descargar */
 .boton-descargar {
   background-color: #388CCA;
   padding: 10px 20px;
@@ -427,8 +429,14 @@ header #contenedor-img #insignia-header {
   border: none;
 }
 
+/* Estilos adicionales "Como unirme" */
 #banner-pilotos-formacion {
   background: url("../img/como-unirme/pilotos-en-formacion.webp") center center/cover no-repeat;
+}
+
+.contenedor-texto ul {
+  list-style: none;
+  padding: 30px 0;
 }
 
 /* Footer */
