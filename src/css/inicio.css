@@ -141,7 +141,7 @@ header #contenedor-img #insignia-header {
 #texto-menu,
 #contenedor-titulo-balanda a {
   font-family: "Arvo", serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -185,7 +185,7 @@ header #contenedor-img #insignia-header {
   }
   #texto-menu,
   #contenedor-titulo-balanda a {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 /* Banner Bienvenida */
